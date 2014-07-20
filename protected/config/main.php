@@ -6,10 +6,11 @@
 // CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'My Web Application',
+    'name' => 'iSupply 1.1',
     // preloading 'log' component
     'preload' => array('log','booster'),
     // autoloading model and component classes
+    'theme'=>'app',
     'import' => array(
         'application.models.*',
         'application.components.*',
@@ -33,6 +34,7 @@ return array(
         ),
         'booster' => array(
             'class' => 'ext.booster.components.Booster',
+              //'fontAwesomeCss' => TRUE,
         ),
         // uncomment the following to enable URLs in path-format
         /*
