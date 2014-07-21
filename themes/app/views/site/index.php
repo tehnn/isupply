@@ -89,11 +89,11 @@ $this->breadcrumbs = array(
                             <td><a href='#'>B12</a></td>
                             <td><span class="badge">12</span></td>
                             <td>
-                                <a href="#" class="btn btn-default btn-danger">
+                                <a href="#" class="btn  btn-danger">
                                     <i class="glyphicon glyphicon-remove">                                  
                                     </i>
                                 </a>
-                                <a href="#" class="btn btn-default btn-success">
+                                <a href="#" class="btn  btn-success">
                                     <i class="glyphicon glyphicon-ok"></i>
                                 </a>                            
                             </td>
@@ -105,11 +105,11 @@ $this->breadcrumbs = array(
                             <td><a href='#'>B11</a></td>
                             <td><span class="badge">2</span></td>
                             <td>
-                                <a href="#" class="btn btn-default btn-danger">
+                                <a href="#" class="btn  btn-danger">
                                     <i class="glyphicon glyphicon-remove">                                  
                                     </i>
                                 </a>
-                                <a href="#" class="btn btn-default btn-success">
+                                <a href="#" class="btn btn-success">
                                     <i class="glyphicon glyphicon-ok"></i>
                                 </a>                            
                             </td>
@@ -121,13 +121,14 @@ $this->breadcrumbs = array(
                             <td><a href='#'>B10</a></td>
                             <td><span class="badge">12</span></td>
                             <td>
-                                <a href="#" class="btn btn-default btn-danger">
+                                <a href="#" class="btn btn-danger">
                                     <i class="glyphicon glyphicon-remove">                                  
                                     </i>
                                 </a>
-                                <a href="#" class="btn btn-default btn-success">
+                                <a href="#" class="btn  btn-success">
                                     <i class="glyphicon glyphicon-ok"></i>
-                                </a>                            
+                                </a> 
+
                             </td>
                         </tr>
 

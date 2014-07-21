@@ -34,7 +34,7 @@ return array(
         ),
         'booster' => array(
             'class' => 'ext.booster.components.Booster',
-              //'fontAwesomeCss' => TRUE,
+            //'fontAwesomeCss' => TRUE,
         ),
         // uncomment the following to enable URLs in path-format
         /*
