@@ -3,18 +3,16 @@
     <head>
         <meta charset="utf-8" />
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
-        <?php
-        Yii::app()->clientScript->registerCssFile('css/style.css');
-        ?>       
+        <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/styles.css" rel="stylesheet" />
     </head>
     <body>
 
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
+        <nav class="nav  navbar-custom">
+            <div class="container-fluid" >
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
+
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -29,10 +27,13 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-barcode"></i>
+                                Dropdown <span class="caret"></span>
+                            </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -46,13 +47,12 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">
-                                <i class="glyphicon glyphicon-cog"></i>
-                            </a>
-                        </li>
+
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-cog"></i>
+                                ตัวเลือก <span class="caret"></span>
+                            </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -66,8 +66,26 @@
             </div><!-- /.container-fluid -->
         </nav>
 
-        <div style="padding-top: 60px;padding-left:20px;padding-right: 10px;">
-            <?php echo $content; ?>
+
+       
+        <div style="padding-left:10px;padding-right: 10px;">
+            
+            <?php if (isset($this->breadcrumbs)): ?>
+                <?php
+                $this->widget('booster.widgets.TbBreadcrumbs', array(
+                    'links' => $this->breadcrumbs,
+                ));
+                ?><!-- breadcrumbs -->
+            <?php endif ?>
+
+           <?php echo $content; ?>
+
         </div>
+
+
+
+
+
+
     </body>
 </html>
