@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
-        <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/styles.css" rel="stylesheet" />
+        <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/utehn-styles.css" rel="stylesheet" />
+        <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/utehn-styles2.css" rel="stylesheet" />
     </head>
     <body>
 
@@ -27,12 +28,23 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-user"></i>
+                                ข้อมูลหน่วยงาน
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-list-alt"></i>
+                                ทะเบียนคุมของ <span class="caret"></span>
+                            </a>
+                        </li>
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="glyphicon glyphicon-barcode"></i>
-                                Dropdown <span class="caret"></span>
+                                <i class="glyphicon glyphicon-list"></i>
+                                ออกรายงาน <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="#">Action</a></li>
@@ -66,10 +78,8 @@
             </div><!-- /.container-fluid -->
         </nav>
 
-
-       
         <div style="padding-left:10px;padding-right: 10px;">
-            
+
             <?php if (isset($this->breadcrumbs)): ?>
                 <?php
                 $this->widget('booster.widgets.TbBreadcrumbs', array(
@@ -78,7 +88,9 @@
                 ?><!-- breadcrumbs -->
             <?php endif ?>
 
-           <?php echo $content; ?>
+
+            <?php echo $content; ?>
+
 
         </div>
 

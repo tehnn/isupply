@@ -6,7 +6,7 @@
 // CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'iSupply 1.1',
+    'name' => 'iCSSD 1.1',
     // preloading 'log' component
     'preload' => array('log','booster'),
     // autoloading model and component classes
