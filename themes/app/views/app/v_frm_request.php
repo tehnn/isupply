@@ -1,7 +1,7 @@
 <?php
 $basedir = Yii::app()->theme->baseUrl;
 $cs = Yii::app()->getClientScript();
-$cs->registerScriptFile($basedir . '/js/form.js', CClientScript::POS_BEGIN);
+$cs->registerScriptFile($basedir . '/js/script.js', CClientScript::POS_BEGIN);
 ?>
 
 <?php

@@ -59,7 +59,7 @@ $this->breadcrumbs = array(
 
                 <i class="glyphicon glyphicon-pencil"></i>
                 รายการใบเบิกของ
-                <a href='#collapse_1' data-toggle="collapse" data-target="#collapse_1" class="a-toggle">                    
+                <a href='#' data-toggle="collapse" data-target="#collapse_1" class="a-toggle">                    
                 </a>
             </h3>
 
@@ -146,7 +146,7 @@ $this->breadcrumbs = array(
             <h3 class="panel-title">
                 <i class="glyphicon glyphicon-paperclip"></i>
                 รับใบเบิกของ
-                <a href='#collapse_2' data-toggle="collapse" data-target="#collapse_2" class="a-toggle">                    
+                <a href='#' data-toggle="collapse" data-target="#collapse_2" class="a-toggle">                    
                 </a>
             </h3>
         </div>
