@@ -10,3 +10,13 @@
      content: "\e080";    /* adjust as needed, taken from bootstrap.css */
     
 }
+
+.row .btn {
+    margin-top: 5px;
+}
+.table .btn {
+    margin-top: -1px;
+}
+
+/*    */
+

@@ -8,9 +8,10 @@
     </head>
     <body>
 
+
         <nav class="nav  navbar-custom">
             <div class="container-fluid" >
-                <!-- Brand and toggle get grouped for better mobile display -->
+
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-utehn-navbar-collapse-1">
 
@@ -25,7 +26,7 @@
                     </a>
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
+               
                 <div class="collapse navbar-collapse" id="bs-utehn-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li>
@@ -66,7 +67,7 @@
                                 ตัวเลือก <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-cog"></i>Action</a></li>
                                 <li><a href="#">Another action</a></li>
                                 <li><a href="#">Something else here</a></li>
                                 <li class="divider"></li>
@@ -74,9 +75,10 @@
                             </ul>
                         </li>
                     </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+                </div> 
+            </div> 
         </nav>
+
 
         <div style="padding-left:10px;padding-right: 10px;">
 
